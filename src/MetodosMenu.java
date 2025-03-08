@@ -5,7 +5,9 @@
 //Luis Quan
 //201927151
 
-import src.*;
+package src;
+
+
 import java.util.Scanner;
 
 

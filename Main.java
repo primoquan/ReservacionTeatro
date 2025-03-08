@@ -12,12 +12,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         GestorBoletos gestor = new GestorBoletos();
-        MetodosMenu metodosmenu = new MetodosMenu(gestor);
-        mostrarMenu(metodosmenu);
+        MetodosMenu metodosMenu = new MetodosMenu(gestor);
+        mostrarMenu(metodosMenu);
     }
 
     //Aqui mostramos el menu
-    private static void mostrarMenu(MetodosMenu metodosmenu) {
+    private static void mostrarMenu(MetodosMenu metodosMenu) {
         Scanner scanner = new Scanner(System.in);
         int opcion;
         do {
@@ -35,19 +35,19 @@ public class Main {
             //Vamos a la opcion seleccionada y llamamos al metodo
             switch (opcion) {
                 case 1:
-                    metodosmenu.registrarReservacion();
+                    metodosMenu.registrarReservacion();
                     break;
                 case 2:
-                    metodosmenu.cancelarReservacion();
+                    metodosMenu.cancelarReservacion();
                     break;
                 case 3:
-                    metodosmenu.verificarAsiento();
+                    metodosMenu.verificarAsiento();
                     break;
                 case 4:
-                    metodosmenu.mostrarReservaciones();
+                    metodosMenu.mostrarReservaciones();
                     break;
                 case 5:
-                    metodosmenu.asignarMejorAsiento();
+                    metodosMenu.asignarMejorAsiento();
                     break;
                 case 6:
                     System.out.println("Saliendo...");
