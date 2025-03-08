@@ -6,6 +6,7 @@
 //201927151
 
 import src.*;
+import java.util.Scanner;
 
 //Esta es nuestra clase principal donde vamos a mostrar el menu y llamaremos a lo metodos para la gestion de boletos
 public class Main {
